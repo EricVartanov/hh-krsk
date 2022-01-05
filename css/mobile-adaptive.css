@@ -17,6 +17,13 @@
     .idc-head__items {
         margin-top: 40px;
     }
+    /* ******comfort**** */
+    .idc-swiper-button-next {
+        margin-right: -12px;
+    }
+    .idc-swiper-button-prev {
+        margin-left: -12px;
+    }
 }
 
 @media (max-width: 699px) {

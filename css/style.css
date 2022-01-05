@@ -125,8 +125,8 @@ svg {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.56)), to(rgba(0, 0, 0, 0)));
     background: -o-linear-gradient(left, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.56)), to(rgba(0, 0, 0, 0)));
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -312,7 +312,7 @@ svg {
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    padding: 13px 12px;
+    padding: 13px 11px;
 }
 
 .idc-swiper-button-next svg,
@@ -353,9 +353,13 @@ svg {
 
 .swiper-pagination-bullet {
     width: 7px;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin: 0 10px!important;
+    height: 7px;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+    -ms-flex-negative: 0 !important;
+    flex-shrink: 0!important;
 }
 
 .swiper-pagination-bullet-active {
@@ -366,15 +370,16 @@ svg {
     border-radius: 160px;
     width: 42px;
     height: 4px;
+    padding-bottom: 4px;
 }
 
 .idc-comfort__swiper .swiper-pagination {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
